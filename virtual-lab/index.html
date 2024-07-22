@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Lab</title>
+</head>
+<body class="h-full bg-black">
+  <div id="root" class="h-full"></div>
+  <div id="joystick"></div>
+  <div
+    class="reality-hive"
+    style="
+      border: none;
+      position: absolute;
+      bottom: 5rem;
+      right: 1rem;
+      width: 458px;
+      height: calc(85vh - 23px);
+      max-height: 801px;
+      border-radius: 0.75rem;
+      display: flex;
+      z-index: 2147483646;
+      overflow: hidden;
+      left: unset;
+    "
+  ></div>
+  <script type="module" src="/src/main.tsx"></script>
+
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="feather feather-settings"
+  >
+    <circle cx="12" cy="12" r="3" />
+    <path d="M19.4 15a9 9 0 0 1-1.57 2.22l-1.5-2.6a9 9 0 0 1-2.6-1.5 8.93 8.93 0 0 1-2.22 1.57l.81 2.86-3.54 3.54-2.86-.81a8.93 8.93 0 0 1-1.57-2.22l-2.6 1.5a9 9 0 0 1-1.5-2.6 8.93 8.93 0 0 1 2.22-1.57l-2.86-.81-3.54-3.54.81-2.86a8.93 8.93 0 0 1-2.22-1.57l1.5-2.6a9 9 0 0 1 2.6-1.5 8.93 8.93 0 0 1 1.57 2.22l2.86-.81 3.54-3.54 2.86.81a8.93 8.93 0 0 1 1.57 2.22l2.6-1.5a9 9 0 0 1 1.5 2.6 8.93 8.93 0 0 1-2.22 1.57l-.81 2.86 3.54 3.54.81 2.86a8.93 8.93 0 0 1 2.22 1.57l1.5 2.6a9 9 0 0 1-1.5 2.6 8.93 8.93 0 0 1-2.22-1.57l-.81 2.86 3.54 3.54 2.86-.81a8.93 8.93 0 0 1 1.57-2.22l2.6 1.5a9 9 0 0 1 1.5-2.6 8.93 8.93 0 0 1-2.22-1.57l.81-2.86z" />
+    <title>Settings</title>
+  </svg>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const iframe = document.querySelector("iframe");
+      iframe.style.position = "static";
+      document.querySelector(".reality-hive").appendChild(iframe);
+    });
+  </script>
+
+  <!-- Chatbase Script -->
+  <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "iDVMX5dqCJdVR-kKmgxNi",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="iDVMX5dqCJdVR-kKmgxNi"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+</body>
+</html>
+
