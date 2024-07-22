@@ -1,3 +1,0 @@
-"""
-Tests for CLI tools.
-"""

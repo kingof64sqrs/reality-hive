@@ -1,1 +1,0 @@
-"""Composio-CrewAI SWE Agent"""

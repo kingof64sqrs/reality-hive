@@ -1,3 +1,0 @@
-"""
-Test `composio.utils` module.
-"""
